@@ -201,7 +201,7 @@ def addPDFtoc(pdffile=None):
 
 if __name__=='__main__':
     
-    C = Contents('contents4.txt', debug=True)
+    C = Contents('contents.txt', debug=True)
     C.writePDFcontents('test.bmk')
     C.writeDJVUcontents('testdjvu.bmk')
     
