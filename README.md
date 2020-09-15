@@ -2,7 +2,7 @@
 Small Python module to format the table of contents for inclusion in a  PDF or DJVU file.
 
 
-# Initial contents file formating
+## Initial contents file formating
 The input file 'contents.txt' must be formated this way:
 - number of spaces at the beginning of the line indicates the level;
 - the number at the end of the line indicates the page;
@@ -15,14 +15,14 @@ One liner, provided the contents is written in 'contents.txt':
 
 > Contents().writePDFcontents()
 
-# Use of output contents file
-## DJVU files
+## Use of output contents file
+### DJVU files
 Use the two following commands:
 > djvused -e print-outline book.djvu
 
 > djvused -s -e 'set-outline contents.bmk' book.djvu
 
-## PDF files
+### PDF files
 First, get the metadata of the PDF file:
 > pdftk file.pdf dump_data > metadata.txt
 
